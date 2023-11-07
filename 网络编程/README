@@ -1,0 +1,11 @@
+执行程序前需要查看本机的55555端口使用情况，没有任何返回信息，表示该端口没有被使用
+netstat -an|find /i "55555"
+C:\Users\Administrator>netstat -an|find /i "55555"
+
+
+运行程序后
+C:\Users\Administrator>netstat -an|find /i "55555"
+               本端                对端                 状态
+  TCP    0.0.0.0:55555          0.0.0.0:0              LISTENING（监听）
+  TCP    127.0.0.1:55555        127.0.0.1:56459        ESTABLISHED（已连接）
+  TCP    127.0.0.1:56459        127.0.0.1:55555        ESTABLISHED
